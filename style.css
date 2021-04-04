@@ -121,7 +121,6 @@ body {
 
 .memory-game-container .game-block .front {
     background-color: #333;
-    line-height: 200px;
     width: 100% !important;
     height: 100% !important;
 }
@@ -129,7 +128,7 @@ body {
 .memory-game-container .game-block .front::before {
     content: "?";
     color: #fff;
-    font-size: 80px;
+    font-size: 6em;
     font-weight: bold;
 }
 
@@ -146,7 +145,7 @@ body {
 }
 
 .memory-game-container .game-block .back i {
-    font-size: 80px;
+    font-size: 6em;
     color: #fff;
 }
 
@@ -178,4 +177,35 @@ body {
 
 .show {
     visibility: visible;
+}
+
+@media screen and (max-width: 425px) {
+
+    .info-container {
+        width: 90%;
+    }
+
+    .memory-game-container {
+        width: 90%;
+    }
+
+    .memory-game-container .game-block {
+        height: 60px;
+        flex: 1 0 50px;
+    }
+
+    .memory-game-container .game-block .back i {
+        font-size: 2em;
+
+    }
+
+    .memory-game-container .game-block .front::before {
+        font-size: 3em;
+    }
+
+    .start-again div p {
+        font-size: 2em;
+        max-width: 90%;
+    }
+    
 }
