@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href='https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css' media='all' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+
+    <div class="start-again" style="visibility: hidden;">
+        <div>
+            <p>Congratulations!</p>
+            <button>Start Again?</button>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+
+    <section class="memory-game-container">
+
+        <div class="game-block" data-technology="angular">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-angular"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="angular">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-angular"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="react">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-react"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="react">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-react"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="vue">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-vuejs"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="vue">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-vuejs"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="js">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-js-square"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="js">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-js-square"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="node">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-node-js"></i> </div>
+
+        </div>
+
+        <div class="game-block" data-technology="node">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-node-js"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="html">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-html5"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="html">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-html5"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="css">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-css3-alt"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="css">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-css3-alt"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="bootstrap">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-bootstrap"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="bootstrap">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-bootstrap"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="sass">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-sass"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="sass">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-sass"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="gulp">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-gulp"></i> </div>
+
+        </div>
+        
+        <div class="game-block" data-technology="gulp">
+            
+            <div class="face front"></div>
+            <div class="face back"> <i class="fab fa-gulp"></i> </div>
+
+        </div>
+
+    </section>
+
+    <audio id="fail" src="sounds/fail.mp3" preload="auto"></audio>
+    <audio id="success" src="sounds/success.mp3" preload="auto"></audio>
+    <audio id="end" src="sounds/end.mp3"></audio>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

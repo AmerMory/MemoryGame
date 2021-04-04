@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.control-buttons,
+.start-again {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #1c4464b9;
+}
+
+.control-buttons span,
+.start-again button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50% );
+    -moz-transform: translate(-50%, -50% );
+    -ms-transform: translate(-50%, -50% );
+    -o-transform: translate(-50%, -50% );
+    background-color: #19d467;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+}
+
+.start-again button {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    top: 85%;
+    font-size: 18px;
+    border: none;
+}
+
+.start-again div {
+    background-color: #fff;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50% );
+    -moz-transform: translate(-50%, -50% );
+    -ms-transform: translate(-50%, -50% );
+    -o-transform: translate(-50%, -50% );
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+}
+
+.start-again div p {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.info-container {
+    width: 60vw;
+    margin: 20px auto 0px;
+    background-color: #f6f6f6;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    font-size: 24px;
+    font-weight: 600;
+    border: 3px solid #2196f3;
+}
+
+.memory-game-container {
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.no-clicking {
+    pointer-events: none;
+}
+
+.memory-game-container .game-block {
+    height: 150px;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 130px;
+    margin: 0px 10px 20px;
+}
+
+.memory-game-container .game-block .front {
+    background-color: #333;
+    line-height: 200px;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.memory-game-container .game-block .front::before {
+    content: "?";
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.memory-game-container .game-block .back {
+    background-color: #607d88;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memory-game-container .game-block .back i {
+    font-size: 80px;
+    color: #fff;
+}
+
+.memory-game-container .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: 5px solid #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-flipped,
+.matched {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
