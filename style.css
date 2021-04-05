@@ -75,7 +75,7 @@ body {
 
 .start-again div p {
     font-size: 50px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -204,8 +204,7 @@ body {
     }
 
     .start-again div p {
-        font-size: 2em;
-        max-width: 90%;
+        font-size: 1em;
     }
     
 }

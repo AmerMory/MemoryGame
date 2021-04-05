@@ -143,16 +143,18 @@ function shuffle(array) {
 }
 
 
-setInterval(() => {
+let mybtn = document.querySelector('.start-again button')
+let startAgain = document.querySelector('.start-again')
+
+let interval = setInterval(() => {
 
     let allMatchedBlocks = blocks.filter(flipBlock => flipBlock.classList.contains('matched'));
-    let mybtn = document.querySelector('.start-again button')
-    let startAgain = document.querySelector('.start-again')
 
     if (allMatchedBlocks.length == orderRange.length) {
 
-        startAgain.style.visibility = "visible"
+        startAgain.style.visibility = "visible";
         document.getElementById('end').play();
+        clearInterval(interval);
 
     } else if (mybtn.textContent === "Start Again?") {
 
